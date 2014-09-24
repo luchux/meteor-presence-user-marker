@@ -1,0 +1,10 @@
+.userMarker{
+    position: relative;
+    width: 50px;
+
+}
+.userMarker p {
+    font-size: 11px;
+    margin: 0px;
+    padding: 0px;
+}
