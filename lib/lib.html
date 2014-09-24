@@ -3,7 +3,7 @@
 
 <template name="userMarker">
   <div class="userMarker" data-user={{user._id}} data-element={{element}} style="background-color:{{user.profile.color}}">
-    <p>{{user.emails.[0].address}}</p>
+    <p>{{#if user.profile.username}}{{user.profile.username}} {{else}}{{user.emails.[0].address}}{{/if}}</p>
     <img style="border:2px solid {{user.profile.color}}" src="http://placekitten.com/60/70"/>
   </div>
 </template>
